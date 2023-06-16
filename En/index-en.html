@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+     <!-- font-awesome cdn link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- custom css file link -->
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <div id="popup-container">
+        <div id="popup-content">
+            <h2>Sum Number</h2>
+            <form>
+              <input type="number" id="one-input" name="one-input"  placeholder="Enter First Number" oninput="addContent()">
+          
+              <input  type="number" id="tow-input" name="tow-input"  placeholder="Enter Tow Number" oninput="addContent()">
+              <div class="result">
+
+              </div>
+          
+            </form>
+            
+            <button id="close-button">Close</button>
+          </div>
+      </div>
+    <div id="loader-container">
+        <div id="loader" class="loader"></div>
+      </div>
+    <!-- header section start -->
+    <header class="header">
+        <a href="#" class="logo">
+            <img src="./assets/logo2.png" alt="">
+        </a>
+        <nav class="navbar">
+            <a href="#home">home</a>
+            <a href="#about">about</a>
+            <a href="#menu">menu</a>
+            <a href="#products">products</a>
+            <a href="#review">review</a>
+            <a href="#contact">contact</a>
+            <a href="#blogs" id="open-button">popup</a>
+        </nav>
+        <div class="icons">
+            <div class="fas fa-search" id="search-btn"></div>
+            <div class="fas fa-shopping-cart" id="cart-btn"></div>
+            <div class="fas fa-bars" id="menu-btn"></div>
+            <div>
+                <a href="file:///C:/Users/obada/Desktop/Balshha/En/index-en.html" class="language-selector" data-lang="en">English</a> /
+                <a href="file:///C:/Users/obada/Desktop/Balshha/Ar/index-ar.html" class="language-selector" data-lang="ar">العربية</a>
+            </div>
+          <div>
+            <label class="switch">
+                <input type="checkbox" checked>
+                <span class="slider round"></span>
+              </label>
+          </div>
+        </div>
+
+        <div class="search-form">
+            <input type="search" id="search-box" placeholder="search here...">
+            <label for="search-box" class="fas fa-search"></label>
+        </div>
+        
+        <div class="cart-items-container">
+            <div class="cart-item">
+                <span class="fas fa-times"></span>
+                <img src="./assets/logo.png" alt="cart">
+                <div class="content">
+                    <h3>cart item 01</h3>
+                    <div class="price"> $15.99/-</div>
+                </div>
+            </div>
+            <div class="cart-item">
+                <span class="fas fa-times"></span>
+                <img src="./assets/logo.png" alt="cart">
+                <div class="content">
+                    <h3>cart item 02</h3>
+                    <div class="price"> $15.99/-</div>
+                </div>
+            </div>
+            <div class="cart-item">
+                <span class="fas fa-times"></span>
+                <img src="./assets/logo.png" alt="cart">
+                <div class="content">
+                    <h3>cart item 03</h3>
+                    <div class="price"> $15.99/-</div>
+                </div>
+            </div>
+            <div class="cart-item">
+                <span class="fas fa-times"></span>
+                <img src="./assets/logo.png" alt="cart">
+                <div class="content">
+                    <h3>cart item 04</h3>
+                    <div class="price"> $15.99/-</div>
+                </div>
+            </div>
+            <a href="#" class="btn">checkout now </a>
+        </div>
+    </header>
+    <!-- header section end -->
+    
+    <!-- home section start -->
+    <section class="home" id="home">
+        <div class="content">
+            <h3>The best restaurants </h3>
+        <p>If you are looking for the best burger tasting restaurants in your city, it is important to look for restaurants that use fresh meat and high-quality ingredients to prepare their burgers. Customer reviews and opinions of different restaurants can also be viewed to find out which places can be trusted and serve delicious burgers.</p>
+        <a href="#" class="btn">get your now</a>
+        </div>
+    </section>
+    <!-- home section end -->
+
+
+    <!-- about section start -->
+    <section class="about" id="about">
+        <h1 class="heading"><span>about</span> us </h1>
+        <div class="row">
+            <div class="image">
+                <img src="./assets/istockphoto-1309352410-612x612.jpg" alt="">
+            </div>
+            <div class="content">
+                <h3>What makes our food special?</h3>
+                <p>Food making is an art and a science that requires many factors to make it special and different from others. It can make foods stand out in a number of ways</p>
+                <p>In general, making food special requires attention to detail, quality and creativity, and this can be achieved by working hard, using good ingredients and presenting the food in a beautiful and distinctive way.</p>
+                <a href="#" class="btn">Learn More</a>
+            </div>
+        </div>
+    </section>
+    <!-- about section end -->
+
+    <!-- about section start -->
+    <section class="menu" id="menu">
+        <h1 class="heading"> our <span>menu</span></h1>
+        <div class="box-container">
+            
+            <div class="box">
+                <img src="./assets/Burger/burger4 (1).png" alt="">
+                <h3>tasty and healthy</h3>
+                <div class="price">$15.99 <span>20.99</span></div>
+                <a href="#" class="btn">add to cart</a>
+            </div>
+
+
+            <div class="box">
+                <img src="./assets/Taco/taco1.png" alt="">
+                <h3>tasty and healthy</h3>
+                <div class="price">$15.99 <span>20.99</span></div>
+                <a href="#" class="btn">add to cart</a>
+            </div>
+
+
+            <div class="box">
+                <img src="./assets/Burger/burger3 (1).png" alt="">
+                <h3>tasty and healthy</h3>
+                <div class="price">$15.99 <span>20.99</span></div>
+                <a href="#" class="btn">add to cart</a>
+            </div>
+
+
+            <div class="box">
+                <img src="./assets/Burger/burger6.png" alt="">
+                <h3>tasty and healthy</h3>
+                <div class="price">$15.99 <span>20.99</span></div>
+                <a href="#" class="btn">add to cart</a>
+            </div>
+
+
+            <div class="box">
+                <img src="./assets/HotDog/hdog1.png" alt="">
+                <h3>tasty and healthy</h3>
+                <div class="price">$15.99 <span>20.99</span></div>
+                <a href="#" class="btn">add to cart</a>
+            </div>
+
+
+            <div class="box">
+                <img src="./assets/Pizza/pizza1.png" alt="">
+                <h3>tasty and healthy</h3>
+                <div class="price">$15.99 <span>20.99</span></div>
+                <a href="#" class="btn">add to cart</a>
+            </div>
+
+        </div>
+    </section>
+    <!-- about section end -->
+
+
+
+
+
+
+
+
+
+
+
+    <!-- custom js file link  -->
+    <script src="./js/script.js"></script>
+</body>
+</html>
